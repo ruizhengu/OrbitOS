@@ -4,6 +4,8 @@
 
 > 一个**由 AI 驱动**的个人生产力系统，通过 AI 助手智能编排**知识管理**与**每日任务规划**。
 
+![Screenshot](50_Resources/Screenshot.png)
+
 ## 什么是 OrbitOS？
 
 OrbitOS 是一个基于 Obsidian 的生产力框架，其核心理念非常简单：**万物皆以你为中心旋转（Everything orbits around you）**。你的项目、知识和每日任务始终保持运动并相互连接——这一切都通过与 AI 的自然语言对话来管理。

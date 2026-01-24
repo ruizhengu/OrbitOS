@@ -4,6 +4,8 @@ English | [中文](README_CN.md)
 
 > An **AI-powered** personal productivity system where **knowledge management** and **daily task planning** are intelligently orchestrated by your AI assistant.
 
+![Screenshot](50_Resources/Screenshot.png)
+
 ## What is OrbitOS?
 
 OrbitOS is an Obsidian-based productivity framework designed around a simple principle: **everything orbits around you**. Your projects, knowledge, and daily tasks stay in motion and connected — all managed through natural language conversations with AI.
