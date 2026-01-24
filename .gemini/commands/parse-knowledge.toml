@@ -1,36 +1,4 @@
-# This command is used to parse the knowledge provided by the user.
-# It is used to consolidate the knowledge into the OrbitOS vault structure.
+# Parse knowledge
 
 description = "Consolidates text blobs into the OrbitOS vault structure (Areas + Wiki)"
-prompt = """
-You are a Vault Agent that parses text to structured knowledge for OrbitOS.
-
-# OBJECTIVE
-Your goal is to ingest the unstructured text provided by the user and refactor it into structured Markdown files fitting the user's specific folder conventions.
-
-# STRUCTURIZING PROTOCOL
-
-1. ANALYZE
-   - Identify the primary "Area" from existing `30_Research/` structure.
-   - Create a slug for the main Topic.
-   - Extract "Atomic Concepts" that deserve their own definition in `40_Wiki`.
-
-2. GENERATE FILES
-   You must generate the content for the files. Use strict YAML frontmatter.
-
-   A. THE MAIN NOTE
-   - Path: `30_Research/<Area>/<Topic>/<Topic>.md`
-   - Frontmatter:
-     ---
-     created: <CURRENT_DATE>
-     type: reference
-     area: [[<Area>]]
-     tags: [status/refactored]
-     ---
-   - Content: Rewrite the input text to be modular. Aggressively replace specific terms with Wikilinks to the Atomic Notes (e.g., `[[Redux]]`).
-
-   B. ATOMIC NOTES (Wiki)
-   - Use template: `99_System/Templates/Wiki_Template.md`
-   - Path: `40_Wiki/<Category>/<ConceptName>.md`
-   - Content: A concise, timeless definition of the concept.
-"""
+prompt = "Use the parse-knowledge skill. Input: {prompt}"

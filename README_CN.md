@@ -68,7 +68,7 @@ AI 会在你的工作过程中自动创建这些连接，随时间推移构建�
 ### 前提条件
 
 - 已安装 [Obsidian](https://obsidian.md/) 并打开此库 (Vault)
-- 已配置 **Claude Code** 或 **Gemini CLI** 并在库目录下运行
+- 已安装 **Claude Code** 或 **Gemini CLI** 并在库目录下运行
 
 ### 你的第一天
 
