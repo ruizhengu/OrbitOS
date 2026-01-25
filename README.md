@@ -4,7 +4,26 @@ English | [中文](README_CN.md)
 
 > An **AI-powered** personal productivity system where **knowledge management** and **daily task planning** are intelligently orchestrated by your AI assistant.
 
-![Screenshot](50_Resources/Screenshot.png)
+![Screenshot](EN/50_Resources/Screenshot.png)
+
+## Installation
+
+**Option 1: Git Sparse Checkout** (downloads only English version)
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/user/OrbitOS.git my-vault
+cd my-vault
+git sparse-checkout set EN
+mv EN/* EN/.* . 2>/dev/null; rmdir EN
+```
+
+**Option 2: Using degit** (no git history, simpler)
+
+```bash
+npx degit user/OrbitOS/EN my-vault
+```
+
+---
 
 ## What is OrbitOS?
 
@@ -127,7 +146,9 @@ The folder structure provides clear organization while remaining adaptable:
 | `/ai-products`    | Discover AI product launches from Product Hunt, HN, GitHub, Reddit |
 
 ---
+
 ## Project Concepts
+
 ### The C.A.P. Project Layout
 
 Every project follows a consistent structure:
