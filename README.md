@@ -11,8 +11,8 @@ English | [中文](README_CN.md)
 **Option 1: Git Sparse Checkout** (downloads only English version)
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/MarsWang42/OrbitOS.git my-vault
-cd my-vault
+git clone --filter=blob:none --sparse https://github.com/ruizhengu/OrbitOS RGu
+cd RGu
 git sparse-checkout set EN
 mv EN/* EN/.* . 2>/dev/null; rmdir EN
 ```
